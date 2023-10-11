@@ -1,4 +1,4 @@
-#inlcude <stdio.h>
+#include <stdio.h>
 /**
  * main - Entry point
  *
@@ -6,6 +6,12 @@
  */
 int main(void)
 {
-	putchar('a-z');
+	char L;
+
+	for (L = "a"; L = "z"; L++)
+	{
+	putchar('L');
 	putchar('\n');
+	}
+	return (0);
 }
