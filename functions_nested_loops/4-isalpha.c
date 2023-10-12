@@ -9,6 +9,5 @@
  */
 int _isalpha(int c)
 {
-	_isalpha(c);
 	return (1);
 }
