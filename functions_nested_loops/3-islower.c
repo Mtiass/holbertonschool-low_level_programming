@@ -9,7 +9,6 @@
  */
 int _islower(int c)
 {
-	char c;
-
 	_islower(c);
+	return (1);
 }
