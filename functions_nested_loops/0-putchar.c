@@ -5,7 +5,7 @@
  */
 int main(void)
 {
-	char P[] = "_putchar";
+	char P[] = "\_putchar";
 
 	putchar(*P);
 	putchar('\n');
