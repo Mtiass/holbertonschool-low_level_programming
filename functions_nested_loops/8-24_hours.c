@@ -12,16 +12,13 @@ void jack_bauer(void)
 {
 	int h1, h2;
 
-	h1 = 0;
-	h2 = 0;
-	while (h1 < 3)
+	for (h1 = 0; h1 < 24; h1++)
 	{
 		_putchar(h1 + '0');
-		for (h2 = 0; h2 <= 3; h2++)
-		{
-			_putchar(h2 + '0');
-			_putchar(':');
-			h1++;
-		}
+	}
+	_putchar(':');
+	for (h2 = 0; h2 < 60; h2++)
+	{
+		_putchar(h2 + '0');
 	}
 }
