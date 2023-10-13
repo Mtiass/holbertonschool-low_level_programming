@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * int add - Entry point
- * Description: function that adds 
- * two integers and returns the result.
- * @A,B: int to be checked
+ * add - Entry point
  *
- * Return: int
+ * Description: "function that adds
+ * two integers and returns the result."
+ * @A: int to be checked
+ * @B: int to be checked
+ *
+ * Return: A + B.
  */
 int add(int A, int B)
 {
