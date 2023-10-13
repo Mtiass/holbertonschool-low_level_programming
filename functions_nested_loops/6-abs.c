@@ -10,7 +10,7 @@
  */
 int _abs(int A)
 {
-	char UA;
+	unsigned int UA;
 
 	UA = (unsigned int)A;
 	_putchar(UA);
