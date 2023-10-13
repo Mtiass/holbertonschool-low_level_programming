@@ -6,13 +6,12 @@
  * value of an integer."
  *
  * @A: variable -t int
- * Return: 
+ * Return:
  */
 int _abs(int A)
 {
 	unsigned int UA;
 
-	UA = (unsigned)A;
-	_putchar(UA);
+	UA = (unsigned int)A;
 	return (UA);
 }
