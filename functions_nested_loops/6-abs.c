@@ -6,7 +6,7 @@
  * value of an integer."
  *
  * @A: variable -t int
- * Return:
+ * Return: UA.
  */
 int _abs(int A)
 {
