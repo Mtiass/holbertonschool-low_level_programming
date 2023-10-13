@@ -10,8 +10,8 @@
  */
 int _abs(int A)
 {
-	int UA;
+	char UA;
 
-	UA = (unsigned int A);
+	UA = (unsigned int)A;
 	return (UA);
 }
