@@ -25,8 +25,10 @@ void times_table(void)
 				_putchar(((A * B) / 10) + '0');
 			}	
 		_putchar(((A * B) % 10) + '0');
-		_putchar(',');
-		_putchar(' ');
+		if (B != 9)
+		{
+			_putchar(',');
+			_putchar(' ');
 		}
 	_putchar('\n');
 	}
