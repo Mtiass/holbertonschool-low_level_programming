@@ -14,5 +14,5 @@ int _abs(int A)
 
 	UA = (unsigned int)A;
 	_putchar(UA);
-	return (A);
+	return (UA);
 }
