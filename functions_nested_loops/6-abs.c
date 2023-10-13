@@ -12,7 +12,7 @@ int _abs(int A)
 {
 	unsigned int UA;
 
-	UA = (unsigned int)A;
+	UA = (unsigned)A;
 	_putchar(UA);
 	return (UA);
 }
