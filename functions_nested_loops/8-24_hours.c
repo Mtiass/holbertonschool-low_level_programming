@@ -19,11 +19,11 @@ void jack_bauer(void)
 		{
 			_putchar(h1 / 10 + '0');
 			_putchar(h1 % 10 + '0');
-                	_putchar(':');
+			_putchar(':');
 			_putchar(h2 / 10 + '0');
 			_putchar(h2 % 10 + '0');
+			_putchar('\n');
 		}
 		h1++;
-	 	_putchar('\n');
 	}
 }
