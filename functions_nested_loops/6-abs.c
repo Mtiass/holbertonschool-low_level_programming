@@ -12,6 +12,6 @@ int _abs(int A)
 {
 	int UA;
 
-	UA = (unsigned int)A;
+	UA = (unsigned int A);
 	return (UA);
 }
