@@ -9,7 +9,6 @@
  */
 void print_line(int n)
 {
-	int m;
         char strlin = '_';
 	
 	while (n > 0)
