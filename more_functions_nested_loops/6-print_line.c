@@ -9,12 +9,16 @@
  */
 void print_line(int n)
 {
-	char strlin = 95;
+	char strlin = '_';
+	char nstrlin = (strlin * n);
 
-	while (n > 0)
+	if (n > 0)
 	{
-		_putchar(strlin * n);
+		_putchar(nstrlin);
 		_putchar('\n');
 	}
-	_putchar('\n');
+	else
+	{
+		_putchar('\n');
+	}
 }
