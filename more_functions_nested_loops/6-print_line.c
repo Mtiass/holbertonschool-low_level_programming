@@ -12,7 +12,7 @@ void print_line(int n)
 	char strlin = '_';
 	if (n > 0)
 	{
-		_putchar(strlin);
+		_putchar(strlin * n);
 		_putchar('\n');
 	}
 	else
