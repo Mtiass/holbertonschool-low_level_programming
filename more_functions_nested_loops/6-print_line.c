@@ -9,7 +9,9 @@
  */
 void print_line(int n)
 {
-	for (int m = 1; m < n; m++)
+	int m;
+
+	for (m = 0; m < n; m++)
 	{
 		if (n > 0)
 		{
