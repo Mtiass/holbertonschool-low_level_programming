@@ -9,7 +9,7 @@
  */
 void print_line(int n)
 {
-	char strlin = (n * 95);
+	char strlin = (n * '_');
 
 	if (n > 0)
 	{
