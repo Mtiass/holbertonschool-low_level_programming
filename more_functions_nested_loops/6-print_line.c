@@ -10,7 +10,7 @@
 void print_line(int n)
 {
 	char strlin = 95;
-	int strlin;
+	int nstrlin;
 	
 	nstrlin = (n * strlin);
 	if (n > 0)
