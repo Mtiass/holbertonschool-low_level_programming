@@ -9,13 +9,11 @@
  */
 void print_line(int n)
 {
-	char strlin = 95;
-	int nstrlin;
-	
-	nstrlin = (n * strlin);
+	char strlin = (n * 95);
+
 	if (n > 0)
 	{
-		_putchar(nstrlin);
+		_putchar(strlin);
 		_putchar('\n');
 	}
 	else
