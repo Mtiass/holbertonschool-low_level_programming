@@ -9,8 +9,8 @@
  */
 void print_line(int n)
 {
-        char strlin = 95;
-	
+	char strlin = 95;
+
 	while (n > 0)
 	{
 		_putchar(strlin * n);
