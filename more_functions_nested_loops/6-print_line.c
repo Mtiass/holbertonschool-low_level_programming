@@ -14,7 +14,7 @@ void print_line(int n)
 	
 	while (n > 0)
 	{
-		_putchar('strlin' * n);
+		_putchar(strlin * n);
 		_putchar('\n');
 	}
 	_putchar('\n');
