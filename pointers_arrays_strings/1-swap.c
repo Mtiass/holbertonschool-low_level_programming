@@ -3,7 +3,8 @@
 /**
  * swap_int - Entry point
  * Description:"In README.md"
- * @a @b
+ * @a:
+ * @b:
  * Return:
  */
 void swap_int(int *a, int *b)
