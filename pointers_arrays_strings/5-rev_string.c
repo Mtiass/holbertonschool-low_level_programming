@@ -17,6 +17,7 @@ void rev_string(char *s)
 	{
 		posfin++;
 	}
+	posfin--;
 	posin = 0;
 	while (posin < posfin)
 	{
