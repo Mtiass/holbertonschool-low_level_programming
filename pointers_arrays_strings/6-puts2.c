@@ -14,11 +14,11 @@ void puts2(char *str)
 	while (str[st] != '\0')
 	{
 		_putchar(str[st]);
+		st++;
 		if (str[st] != '\0')
 		{
 			st++;
 		}
-		st++;
 	}
 	_putchar('\n');
 }
