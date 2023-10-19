@@ -16,8 +16,8 @@ void print_rev(char *s)
 		if (s[revst] < '\0')
 		{
 			_putchar(s[revst]);
+			revst--;
 		}
-		revst--;
 	}
 	_putchar('\n');
 }
