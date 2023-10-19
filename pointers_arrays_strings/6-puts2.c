@@ -18,7 +18,7 @@ void puts2(char *str)
 		{
 			st++;
 		}
-                st++;
+		st++;
 	}
 	_putchar('\n');
 }
