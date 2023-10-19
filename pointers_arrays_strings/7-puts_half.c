@@ -3,7 +3,7 @@
 /**
  * puts_half - Entry point
  * Description:"In README.md file."
- * @str:
+ * @str:"pointer to be checked"
  * Return:
  */
 void puts_half(char *str)
