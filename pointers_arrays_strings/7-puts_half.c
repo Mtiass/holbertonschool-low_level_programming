@@ -7,19 +7,27 @@
  * Return:
  */
 void puts_half(char *str)
-{
+{	
+	int stle;
+
+	stle = 0;
+	while (str[stle] != '\0')
+	{
+		stle++;
+	}
 	int lest;
 
-	lest = _strlen(str);
-
-	while (lest % 2 == 0)
+	if (stle % 2 == 0)
 	{
-		_putchar(lest / 2);
-		lest++;
+		lest = stle / 2;
 	}
-	while (lest % 2 != 0)
+	else (stle % 2 != 0)
 	{
-		_putchar((lest - 1) / 2);
+		lest = ((stle - 1) / 2);
+	}
+	while (str[lest] != '\0')
+	{
+		_putchar(lest);
 		lest++;
 	}
 	_putchar('\n');
