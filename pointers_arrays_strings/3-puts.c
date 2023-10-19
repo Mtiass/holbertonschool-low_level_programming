@@ -3,17 +3,17 @@
 /**
  * _puts - Entry point
  * Descritpion:"In README.md"
- * @str
+ * @*str
  * Return:
  */
 void _puts(char *str)
 {
 	int st;
-	
+
 	st = 0;
 	while (str[st] != '\0')
 	{
-		_putchar(*str);
+		_putchar(*str[st];
 		st++;
 	}
 	_putchar('\n');
