@@ -12,9 +12,10 @@ void print_rev(char *s)
 
 	for (revst = s['\0']; revst >= 0; revst--)
 	{
-		if (s[revst] != '\0')
+		while (s[revst] != '\0')
 		{
 		_putchar(s[revst]);
+		revst--;
 		}
 	}
 	_putchar('\n');
