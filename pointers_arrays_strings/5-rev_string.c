@@ -12,5 +12,9 @@ void rev_string(char *s)
 	int revst;
 
 	revst = strlen(s) - 1;
+	while (revst >= 0)
+	{
+		_putchar(s[revst]);
+	}
 	_putchar('\n');
 }
