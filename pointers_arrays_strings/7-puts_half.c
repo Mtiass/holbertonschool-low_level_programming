@@ -7,7 +7,7 @@
  * Return:
  */
 void puts_half(char *str)
-{	
+{
 	int stle;
 	int lest;
 
@@ -22,7 +22,7 @@ void puts_half(char *str)
 	}
 	else
 	{
-		lest = ((stle - 1) / 2);
+		lest = ((stle - 1) / 2) + 1;
 	}
 	while (str[lest] != '\0')
 	{
