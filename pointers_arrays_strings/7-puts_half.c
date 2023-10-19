@@ -20,7 +20,7 @@ void puts_half(char *str)
 	{
 		lest = stle / 2;
 	}
-	else (stle % 2 < 0)
+	else ((stle % 2) < 0)
 	{
 		lest = ((stle - 1) / 2);
 	}
