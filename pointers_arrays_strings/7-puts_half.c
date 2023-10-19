@@ -9,19 +9,18 @@
 void puts_half(char *str)
 {	
 	int stle;
+	int lest;
 
 	stle = 0;
 	while (str[stle] != '\0')
 	{
 		stle++;
 	}
-	int lest;
-
 	if (stle % 2 == 0)
 	{
 		lest = stle / 2;
 	}
-	else (stle % 2 != 0)
+	else (stle % 2 < 0)
 	{
 		lest = ((stle - 1) / 2);
 	}
