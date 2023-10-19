@@ -20,13 +20,13 @@ void puts_half(char *str)
 	{
 		lest = stle / 2;
 	}
-	else ((stle % 2) < 0)
+	else
 	{
 		lest = ((stle - 1) / 2);
 	}
 	while (str[lest] != '\0')
 	{
-		_putchar(lest);
+		_putchar(str[lest]);
 		lest++;
 	}
 	_putchar('\n');
