@@ -3,8 +3,8 @@
 /**
  * *_strcpy - Entry point
  * Description:"In README.md file"
- * @*dest:pointer char type.
- * @*src:pointer char type
+ * @dest:pointer char type.
+ * @src:pointer char type
  * Return: type char.
  */
 char *_strcpy(char *dest, char *src)
