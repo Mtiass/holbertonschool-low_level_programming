@@ -10,7 +10,7 @@
 void reverse_array(int *a, int n)
 {
 	int posin, posfin;
-	char cp;
+	int cp;
 
 	posin = 0;
 	posfin = n - 1;
