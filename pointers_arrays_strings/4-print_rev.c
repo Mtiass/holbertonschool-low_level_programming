@@ -1,6 +1,5 @@
 #include "main.h"
-#include <stdio.h>
-#include <string.h>
+
 /**
  * print_rev - Entry point
  * Description:"In README.md file"
@@ -9,13 +8,18 @@
  */
 void print_rev(char *s)
 {
-	int revst;
+	int stle;
 
-	revst = strlen(s) - 1;
-	while (revst >= 0)
+	stle = 0;
+	while (s[stle] != '\0')
 	{
-		_putchar(s[revst]);
-		revst--;
+		stle++;
+	}
+	stle -= 1;
+	while (s[stle] >= 0)
+	{
+		_putchar(s[stle]);
+		stle--;
 	}
 	_putchar('\n');
 }
