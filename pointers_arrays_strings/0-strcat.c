@@ -5,7 +5,7 @@
  * Descritpion:"In README.md"
  * @dest:"pointer variable type char."
  * @src:"pointer variable type char"
- * Return:
+ * Return: char *dest.
  */
 char *_strcat(char *dest, char *src)
 {
