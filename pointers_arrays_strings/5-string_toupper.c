@@ -3,7 +3,8 @@
 /**
  * string_toupper - Entry point
  * Description:"In README.md file"
- * Return:
+ * @str: param 1.
+ * Return:char string
  */
 char *string_toupper(char *str)
 {
@@ -17,6 +18,6 @@ char *string_toupper(char *str)
 			str[con] -= 32;
 		}
 		con++;
-	}	
+	}
 	return (str);
 }
