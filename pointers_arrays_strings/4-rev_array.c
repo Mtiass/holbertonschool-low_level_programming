@@ -20,6 +20,6 @@ void reverse_array(int *a, int n)
 		a[posin] = a[posfin];
 		a[posfin] = cp;
 		posin++;
-		posfin--:
+		posfin--;
 	}
 }
