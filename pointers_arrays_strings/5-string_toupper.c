@@ -5,9 +5,8 @@
  * Description:"In README.md file"
  * Return:
  */
-char *string_toupper(char *)
+char *string_toupper(char *str)
 {
-	char *str;
 	int con;
 
 	con = 0;
