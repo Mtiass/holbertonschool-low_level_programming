@@ -27,10 +27,10 @@ int _strcmp(char *s1, char *s2)
 	}
 	else if (con > con2)
 	{
-		return (15);
+		return (13);
 	}
 	else
 	{
-		return (-15);
+		return (-13);
 	}
 }
