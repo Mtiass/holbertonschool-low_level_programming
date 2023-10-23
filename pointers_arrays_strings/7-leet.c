@@ -19,7 +19,7 @@ char *leet(char *str)
 	{
 		for (con2 = 0; a[con2] < 10; con2++)
 		{
-			if (str[con] == a[con2])
+			if (con = con2)
 			{
 				a[] = b[];
 				str[] = a[];
