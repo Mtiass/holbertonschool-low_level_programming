@@ -9,7 +9,6 @@
  */
 char *leet(char *str)
 {
-	char *str;
 	int con, con2;
 	a[10];
        	b[10];
