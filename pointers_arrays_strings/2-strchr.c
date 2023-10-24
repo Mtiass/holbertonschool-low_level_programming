@@ -10,17 +10,13 @@
  */
 char *_strchr(char *s, char c)
 {
-	int con;
-	int con2;
-
-	con2 = s[c];
-	for (con = 0; s[con] < c; con++)
+	while (*s != '\0')	
 	{
-		while (con2 >= c && s[con2] != '\0')	
+		if (*s == c)
 		{
-			s[con2] = c;
-			con2++;
+			return (s);
 		}
+		s++;
 	}
-	return (s);
+	return ('\0');
 }
