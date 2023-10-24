@@ -13,7 +13,7 @@ char *_strchr(char *s, char c)
 	int con;
 	int con2;
 
-	con2 = 0;
+	con2 = s[c];
 	for (con = 0; s[con] < c; con++)
 	{
 		while (con2 >= c && s[con2] != '\0')	
