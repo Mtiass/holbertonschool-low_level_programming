@@ -20,6 +20,7 @@ char *_memcpy(char *dest, char *src, unsigned int n)
 	while (con < n)
 	{
 		dest[con] = '\0';
+		con++;
 	}
 	return (dest);
 }
