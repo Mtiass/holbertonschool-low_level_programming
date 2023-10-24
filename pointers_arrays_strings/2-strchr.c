@@ -22,4 +22,5 @@ char *_strchr(char *s, char c)
 			con2++;
 		}
 	}
+	return (s);
 }
