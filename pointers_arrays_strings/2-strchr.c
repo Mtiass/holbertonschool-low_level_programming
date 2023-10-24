@@ -11,9 +11,15 @@
 char *_strchr(char *s, char c)
 {
 	int con;
+	int con2;
 
-	for (con = 0; s[con] != '\0'; con++)
+	con2 = 0;
+	for (con = 0; s[con] < c; con++)
 	{
-		if (s[con] = 'c')
+		while (con2 >= c && s[con2] != '\0')	
 		{
-
+			s[con2] = c;
+			con2++;
+		}
+	}
+}
