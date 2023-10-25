@@ -17,7 +17,7 @@ unsigned int _strspn(char *s, char *accept)
 	{
 		for (con2 = 0; accept[con2] != '\0'; con2++)
 		{
-			if (*s == *accept)
+			if (s[con1] == accept[con2] && accept != '\0')
 			{
 				len++;
 			}
