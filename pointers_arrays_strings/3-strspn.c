@@ -10,11 +10,15 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int con = 0;
+	unsigned int len = 0;
+	int con1, con2;	
 
-	while (accept[con] != '\0')
-	{
-		con++;
+	for (con1; s[con1] != '\0'; con1)
+	{	
+		for (con2 = 0; accept[con2] != '\0'; con2++)
+		{
+			len++;
+		}
 	}
-	return (con);
+	return (len);
 }
