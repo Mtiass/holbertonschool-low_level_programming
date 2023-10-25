@@ -9,4 +9,20 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
+	int con1, c2;
 
+	for (con1 = 0; con1 != '\0'; con1++)
+	{
+		for (c2 = 0; c2 != '\0'; c2++)
+		{
+			if (s[con1] == accept[c2])
+			{
+				return (s);
+			}
+			else 
+			{
+				return ('\0');
+			}
+		}
+	}
+}
