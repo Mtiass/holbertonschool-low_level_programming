@@ -24,7 +24,7 @@ unsigned int _strspn(char *s, char *accept)
 				break;
 			}
 		}
-		if (cT = 0)
+		if (cT == 0)
 		{
 			break;
 		}
