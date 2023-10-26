@@ -11,7 +11,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int len = 0;
-	int con1, con2;
+	int con1, con2, cT;
 
 	for (con1 = 0; s[con1] != '\0'; con1++)
 	{
@@ -19,8 +19,13 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[con1] == accept[con2])
 			{
+				cT = 1;
 				break;
 			}
+		}
+		if (found = 0)
+		{
+			break;
 		}
 		len++;
 	}
