@@ -19,9 +19,10 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (s[con1] == accept[con2])
 			{
-				len++;
+				break;
 			}
 		}
+		len++;
 	}
 	return (len);
 }
