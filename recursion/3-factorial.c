@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * int factorial - Entry point
+ * factorial - Entry point
  * Description:"function that returns the
  * factorial of a given number."
  * @n: integer to factored.
