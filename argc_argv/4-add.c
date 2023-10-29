@@ -12,9 +12,11 @@ int main(int argc, char **argv)
 {
 	int sum, con, pos = 0;
 	sum = 0;
+
 	if (argc == 1)
 	{
 		printf("0\n");
+		return (0);
 	}
 	for (con = 1; con < argc; con++)
 	{
@@ -34,4 +36,4 @@ int main(int argc, char **argv)
 	}
 	printf("%d\n", sum);
 	return (0);
-}	
+}
