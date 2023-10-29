@@ -10,9 +10,10 @@
  */
 int main(int argc, char **argv)
 {
-	int sum, con, pos = 0;
-	sum = 0;
+	int sum, con, pos;
 
+	pos = 0;
+	sum = 0;
 	if (argc == 1)
 	{
 		printf("0\n");
