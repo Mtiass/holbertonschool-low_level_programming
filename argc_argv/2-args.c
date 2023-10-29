@@ -11,7 +11,7 @@ int main(int argc, char **argv)
 {
 	int con = 0;
 
-	if (argv[con 0] != argv[argc])
+	if (argv[con] != argv[argc])
 	{
 		for (; con < argc; con++)
 		{
