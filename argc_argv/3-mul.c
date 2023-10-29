@@ -6,7 +6,7 @@
  * numbers."
  * @argc:argument counter.
  * @argv:argument vector(array) of strings.
- * Retrun: integer 0.
+ * Return: integer 0.
  */
 int main(int argc, char **argv)
 {
@@ -19,7 +19,7 @@ int main(int argc, char **argv)
 		{
 			mult *= atoi(argv[con]);
 		}
-		printf("%d", mult);
+		printf("%d\n", mult);
 	}
 	else
 	{
