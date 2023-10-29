@@ -10,7 +10,8 @@
 int main(int argc, char **argv)
 {
 	int con;
-	if (argv[con] != argv[argc])
+
+	if (argv[] != argv[argc])
 	{
 		for (con = 0; con < argc; con++)
 		{
