@@ -23,7 +23,7 @@ int main(int argc, char **argv)
 	}
 	else
 	{
-		printf("%s", war);
+		printf("%s\n", war);
 		return (1);
 	}
 	return (0);
