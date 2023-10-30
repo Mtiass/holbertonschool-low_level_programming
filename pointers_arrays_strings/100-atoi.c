@@ -8,35 +8,27 @@
  */
 int _atoi(char *s)
 {
-	int con, res, sign, con2;
+	int res, sign;
 
-	con = 0;
 	res = 0;
 	sign = 1;
-	con2 = 0;
-	while (s[con] == '-' || s[con] == '+')
+	while (*s == ' ')
 	{
-		if (s[con] == '-')
-		{
-			sign *= -1;
-		}
-		con++;
+		s++;
 	}
-	for (; s[con] != '\0'; con++)
+	if (*s == '-')
 	{
-		if (s[con] >= '0' && s[con] <= '9')
-		{
-			res = res * 10 + (s[con] - '0');
-			con2++;
-		}
-		else
-		{
-			break;
-		}
+		sign *= -1;
+		s++;
 	}
-	if (con2 == 0)
+	else if (*s == '+')
 	{
-		return (0);
+		s++;
+	}
+	while (*s >= '0' && *s <= '9')
+	{
+		res = res * 10 + (*s - '0');
+		s++;
 	}
 	return (res * sign);
 }
