@@ -27,10 +27,6 @@ char *cap_string(char *st)
 		{
 			st[con] -= 32;
 		}
-		else if (st[con - 1] >= '0' && st[con - 1] <= '9')
-		{
-			st[con] -= 32;
-		}
 		con++;
 	}
 	return (st);
