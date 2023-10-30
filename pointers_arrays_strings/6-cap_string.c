@@ -26,8 +26,8 @@ char *cap_string(char *st)
 		st[con - 1] == '}')
 		{
 			st[con] -= 32;
-			con++;
 		}
+		con++;
 	}
 	return (st);
 }
