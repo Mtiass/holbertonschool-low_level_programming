@@ -10,19 +10,17 @@ int _atoi(char *s)
 {
 	int con, res, sign;
 
-	con = 0;
 	res = 0;
 	sign = 1;
-	if (s[con] == '-')
+	while (s[con] == '+' || s[con] == '-')
 	{
-		sign = -1;
-		s++;
+		if (s[con] == '-')
+		{
+			sign = -sign;
+		}
+		con++;
 	}
-	else if (s[0] == '+')
-	{
-		s++;
-	} 
-	for (; s[con] != '\0'; con++)
+	for (con = 0; s[con] != '\0'; con++)
 	{
 		if (s[con] >= '0' && s[con] <= '9')
 		{
@@ -30,7 +28,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			continue;
+			break;
 		}
 	}
 	return (res * sign);
