@@ -17,13 +17,17 @@ char *cap_string(char *st)
 		{
 			con++;
 		}
-		if (st[con - 1] == ' ' || st[con - 1] == '\t' ||
+		if (con == 0 || st[con - 1] == ' ' || st[con - 1] == '\t' ||
 		st[con - 1] == '\n' || st[con - 1] == ',' ||
 		st[con - 1] == ';' || st[con - 1] == '.' ||
 		st[con - 1] == '!' || st[con - 1] == '?' ||
 		st[con - 1] == '"' || st[con - 1] == '(' ||
 		st[con - 1] == ')' || st[con - 1] == '{' ||
 		st[con - 1] == '}')
+		{
+			st[con] -= 32;
+		}
+		else if (st[con - 1] >= '0' && st[con - 1] <= '9')
 		{
 			st[con] -= 32;
 		}
