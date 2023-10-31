@@ -20,10 +20,18 @@ int _atoi(char *s)
 			sign *= -1;
 			s++;
 		}
+		else if (*s == '+')
+		{
+			s++;
+		}
 		if (*s >= '0' && *s <= '9')
 		{
 			res = (res * 10) + (*s - '0');
 			s++;
+		}
+		else
+		{
+			break;
 		}
 	}
 	return (res * sign);
