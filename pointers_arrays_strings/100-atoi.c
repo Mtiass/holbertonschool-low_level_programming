@@ -31,7 +31,7 @@ int _atoi(char *s)
 		}
 		else
 		{
-			break;
+			continue;
 		}
 	}
 	return (res * sign);
