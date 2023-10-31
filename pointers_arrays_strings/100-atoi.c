@@ -31,7 +31,6 @@ int _atoi(char *s)
 		}
 		else
 		{
-			s++;
 			continue;
 		}
 	}
