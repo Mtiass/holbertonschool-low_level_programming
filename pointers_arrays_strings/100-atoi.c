@@ -25,6 +25,10 @@ int _atoi(char *s)
 			res = (res * 10) + (*s - '0');
 			s++;
 		}
+		else
+		{
+			continue;
+		}
 	}
 	return (res * sign);
 }
