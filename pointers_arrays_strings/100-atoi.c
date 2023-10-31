@@ -20,7 +20,7 @@ int _atoi(char *s)
 			sign *= -1;
 			s++;
 		}
-		if (*s == ' ' || *s == '-' || *s == '+')
+		if (*s == ' ')
 		{
 			continue;
 		}
