@@ -15,11 +15,11 @@ int _atoi(char *s)
 	sign = 1;
 	while (*s)
 	{
-		while (*s == ' ')
+		while (*s == ' ' || *s == '+')
 		{
 			s++;
 		}
-		if (*s == '-' || *s == '+')
+		if (*s == '-')
 		{
 			sign *= -1;
 			s++;
