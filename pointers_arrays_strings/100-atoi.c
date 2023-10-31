@@ -20,8 +20,15 @@ int _atoi(char *s)
 			sign *= -1;
 			s++;
 		}
-		res = (res * 10) + (*s - '0');
-		s++;
+		if (*s == ' ' || *s == '-' || *s == '+')
+		{
+			continue;
+		}
+		if (*s >= '0' && *s <= '9')
+		{
+			res = (res * 10) + (*s - '0');
+			s++;
+		}
 	}
 	return (res * sign);
 }
