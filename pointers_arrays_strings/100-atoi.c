@@ -20,10 +20,6 @@ int _atoi(char *s)
 			sign *= -1;
 			s++;
 		}
-		if (*s == ' ')
-		{
-			continue;
-		}
 		if (*s >= '0' && *s <= '9')
 		{
 			res = (res * 10) + (*s - '0');
