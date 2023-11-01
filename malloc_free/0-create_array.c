@@ -10,16 +10,17 @@
  */
 char *create_array(unsigned int size, char c)
 {
-	char *ar = malloc(size * sizeof(char));
-	int con;
+	char *ar;
 
+	ar = malloc(size * sizeof(char));
 	if (size == 0)
 	{
-		return (NULL);
+		return ('\0');
 	}
-	for (con = 0; ar[con] != '\0'; con++)
+	while (*ar != '\0')
 	{
-		ar[con] = c;
+		*ar = c;
+		ar++;
 	}
 	free(ar);
 	return (ar);
