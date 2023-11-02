@@ -24,6 +24,5 @@ int **alloc_grid(int width, int height)
 		if (intar[con] == NULL)
 			return (NULL);
 	}
-	free(intar);
 	return (intar);
 }
