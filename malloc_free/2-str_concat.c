@@ -22,6 +22,9 @@ char *str_concat(char *s1, char *s2)
 	if (s2 != NULL)
 		strcat(s3, s2);
 	else
-		strcat(s3, " ");
+	{
+		s2 = '\0';
+		strcat(s3, s2);
+	}
 	return (s3);
 }
