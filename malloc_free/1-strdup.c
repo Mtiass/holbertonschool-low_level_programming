@@ -19,12 +19,3 @@ char *_strdup(char *str)
 	free(strdes);
 	return (strdes);
 }
-/**
- * main - Entry point
- *
- * Return: 0
- */
-int main(void)
-{
-	return (0);
-}
