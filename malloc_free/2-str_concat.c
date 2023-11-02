@@ -17,9 +17,11 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (s1 != NULL)
 		strcpy(s3, s1);
-	else if (s1 == NULL)
+	else if (s2 != NULL)
+		strcat(s3, s2);
+	else if (s1 == NULL && s2 != NULL)
 		strcpy(s3, s2);
-	else 
+	else if (s1 == NULL && s2 == NULL)
 		s3 = '\0';
 	return (s3);
 }
