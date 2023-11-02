@@ -19,13 +19,7 @@ char *str_concat(char *s1, char *s2)
 		strcpy(s3, s1);
 	else
 		s3 = '\0';
-	if (s2 != NULL)
-		strcat(s3, s2);
-	else
-	{
-		s2 = '\0';
-		strcat(s3, s2);
-	}
+	strcat(s3, s2);
 	if (s1 == NULL && s2 == NULL)
 		s3 = " ";
 	return (s3);
