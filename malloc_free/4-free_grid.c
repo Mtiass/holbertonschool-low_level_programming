@@ -10,17 +10,12 @@
  */
 void free_grid(int **grid, int height)
 {
-	int con, frcon;
+	int con;
 
 	for (con = 0; con < height; con++)
 	{
-		if (grid == NULL)
-		{
-			for (frcon = 0; frcon < con; frcon++)
-			{
-				free(grid[frcon]);
-			}
-			free(grid);
-		}
+		if (grid[con] != NULL)
+			free(grid[con]);
 	}
+	free(grid);
 }
