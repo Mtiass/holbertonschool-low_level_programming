@@ -20,6 +20,6 @@ char *str_concat(char *s1, char *s2)
 	else
 		s3 = '\0';
 	if (s2 != NULL)
-		strcat(s3, s2)
+		strcat(s3, s2);
 	return (s3);
 }
