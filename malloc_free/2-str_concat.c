@@ -17,9 +17,9 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 	if (s1 != NULL)
 		strcpy(s3, s1);
-	else if (s2 != NULL)
+	else
+		s3 = " ";
+	if (s2 != NULL)
 		strcat(s3, s2);
-	if (s1 == NULL && s2 != NULL)
-		strcpy(s3, s2);
 	return (s3);
 }
