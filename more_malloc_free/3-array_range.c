@@ -12,7 +12,7 @@ int *array_range(int min, int max)
 	int *intar;
 	int con = min;
 
-	intar = malloc((max - min)  * sizeof(int));
+	intar = malloc((max - min + 1)  * sizeof(int));
 	if (min > max || intar == NULL)
 	{
 		free(intar);
