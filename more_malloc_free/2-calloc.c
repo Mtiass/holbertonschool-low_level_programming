@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <string.h>
 #include "main.h"
 /**
  * _calloc - Entry point
@@ -17,7 +18,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	if (intar == NULL)
 	{
 		free(intar);
-		exit(0);
+		return (NULL);
 	}
+	memset(intar, 0, nmemb * size);
 	return (intar);
 }
