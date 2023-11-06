@@ -1,2 +1,1 @@
-C - Hello, World
-0-preprocessor
+Structures, typedef
