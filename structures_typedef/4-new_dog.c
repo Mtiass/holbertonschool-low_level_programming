@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
- * dog_t - Entry point
+ * new_dog - Entry point
  * Description:function that creates a new dog.
  * @name: new dog's name
  * @age: new dog's age
@@ -15,18 +15,21 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *new_dog;
 	char *copyn;
 	char *copyo;
-	
+
 	new_dog	= malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 	{
 		free(new_dog);
 		return (NULL);
 	}
-        copyn = strdup(name);
+	copyn = strdup(name);
+	if (copyn == NULL)
+		free(copyn);
 	copyo = strdup(owner);
+	if (copyo == NULL)
+		free(copyo);
 	new_dog->name = copyn;
 	new_dog->age = age;
 	new_dog->owner = copyo;
-	
-	return new_dog;
+	return (new_dog);
 }
