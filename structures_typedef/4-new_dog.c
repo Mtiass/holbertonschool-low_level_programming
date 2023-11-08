@@ -16,6 +16,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 	char *copyn;
 	char *copyo;
 
+	if (name == NULL || owner == NULL)
+	{
+		free(name);
+		free(owner);
+		free(new_dog);
+	}
 	new_dog	= malloc(sizeof(dog_t));
 	if (new_dog == NULL)
 	{
