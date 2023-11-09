@@ -24,10 +24,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 		new_dog->name = copyn;
 		new_dog->age = age;
 		new_dog->owner = copyo;
-		if (new_dog->name == NULL || new_dog->owner == NULL)
+		if (new_dog->copyn == NULL || new_dog->copyo == NULL)
 		{
-			free(new_dog->name);
-			free(new_dog->owner);
+			free(new_dog->copyn);
+			free(new_dog->copyo);
 			free(new_dog);
 			return (NULL);
 		}
