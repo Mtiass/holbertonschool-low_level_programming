@@ -25,11 +25,15 @@ dog_t *new_dog(char *name, float age, char *owner)
 	new_dog->age = age;
 	new_dog->owner = copyo;
 	}
-	else if (new_dog == NULL)
+	else if (new_dog->name == NULL || new_dog->owner == NULL)
 	{
 		free(new_dog->name);
 		free(new_dog->owner);
 		free(new_dog);
+		return (NULL);
+	}
+	else if (new_dog == NULL)
+	{
 		return (NULL);
 	}
 	return (new_dog);
