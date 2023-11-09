@@ -5,21 +5,24 @@
  * @array: pointer to an int array
  * @size: var type int which is size of array.
  * @cmp: function typ
- * Return:
+ * Return: 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
 	int con = 0;
 
-	if (size <= 0)
+	if (size <= 0 || array == NULL)
 	{
 		return (-1);
 	}
-	for (; con < size; con++)
+	if (cmp != NULL)
 	{
-		if (cmp(array[con] != 0))
+		for (; con < size; con++)
 		{
-			return (con);
+			if (cmp(array[con] != 0))
+			{
+				return (con);
+			}
 		}
 	}
 	return (-1);
