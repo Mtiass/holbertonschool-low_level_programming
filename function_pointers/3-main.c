@@ -27,5 +27,5 @@ int main(int argc, char *argv[])
 		exit(99);
 	}
 	printf("%d\n", operation(n1, n2));
-	return(0);
+	return (0);
 }
