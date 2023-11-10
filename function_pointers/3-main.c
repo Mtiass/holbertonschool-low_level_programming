@@ -8,17 +8,17 @@
  */
 int main(int argc, char *argv[])
 {
+	int n1;
+	int n2;
+
 	if (argc != 4)
 	{
 		puts("Error");
 		exit(98);
 	}
-	int n1;
-	int n2;
-
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
-	(*operation)(int, int) = get_op_func(argv[2]);
+	operation = get_op_func(argv[2]);
 
 	if (operation == NULL)
 	{
