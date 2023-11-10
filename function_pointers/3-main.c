@@ -13,11 +13,12 @@ int main(int argc, char *argv[])
 		puts("Error");
 		exit(98);
 	}
-	int n1, n2;
+	int n1;
+	int n2;
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
-	int (*operation)(int, int) = get_op_func(argv[2]);
+	(*operation)(int, int) = get_op_func(argv[2]);
 
 	if (operation == NULL)
 	{
