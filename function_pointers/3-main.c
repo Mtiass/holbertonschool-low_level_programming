@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 		puts("Error");
 		exit(98);
 	}
-	int n1, int n2;
+	int n1, n2;
 
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[3]);
@@ -24,6 +24,6 @@ int main(int argc, char *argv[])
 		puts("Error");
 		exit(99);
 	}
-	printf("%d\n", operation(num1, num2));
+	printf("%d\n", operation(n1, n2));
 	return(0);
 }
