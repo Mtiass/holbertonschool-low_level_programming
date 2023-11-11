@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 		default:
 			break;
 		}
-		while (format[c + 1] != '\0' && format[c] != '\0')
+		while (format[c + 1] != '\0')
 			printf(", ");
 		c++;
 	}
