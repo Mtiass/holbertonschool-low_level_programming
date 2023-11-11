@@ -1,0 +1,47 @@
+#include "variadic_functions.h"
+/**
+ * print_all - Entry point
+ * Description:function that prints anything.
+ * @format:is a list of types of arguments passed to the function.
+ * Return: void.
+ */
+void print_all(const char * const format, ...)
+{
+	unsigned int c;
+	char *str;
+	va_list arglis;
+
+	va_start(arglis, format);
+	str = va_arg(arglis, char *);
+	c = 0;
+	while (format[c] != '\0')
+	{
+		switch (format[c])
+		{
+			case 'c': {
+				printf("%c", va_arg(arglis, int));
+				break;
+			}
+			case 'i': {
+				printf("%i", va_arg(arglis, int));
+				break;
+			}
+			case 'f': {
+				printf("%f", va_arg(arglis, double));
+				break;
+			}
+			case 's': {
+				if (str != NULL)
+					printf("%s", str);
+				else
+					printf("(nil)");
+				break;
+			}
+		default:
+			break;
+		}
+		c++;
+	}
+	printf("\n");
+	va_end(arglis);
+}
