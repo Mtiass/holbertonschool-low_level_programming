@@ -33,7 +33,7 @@ void print_all(const char * const format, ...)
 			case 's': {
 				if (str != NULL)
 					printf("%s", str);
-				else
+				if (str == NULL)
 					printf("(nil)");
 				break;
 			}
