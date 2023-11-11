@@ -32,14 +32,14 @@ void print_all(const char * const format, ...)
 				{
 					printf("%s", str);
 					break; }
-				if (str == NULL)
+				else if (str == NULL)
 				{
 					printf("(nil)");
 					break; }
 			}
 		default:
 			break; }
-		while (format[c + 1] != '\0')
+		if (format[c + 1] != '\0')
 		{
 			printf(", ");
 			break; }
