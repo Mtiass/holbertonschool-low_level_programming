@@ -19,30 +19,31 @@ void print_all(const char * const format, ...)
 		{
 			case 'c': {
 				printf("%c", va_arg(arglis, int));
-				break;
-			}
+				break; }
 			case 'i': {
 				printf("%i", va_arg(arglis, int));
-				break;
-			}
+				break; }
 			case 'f': {
 				printf("%f", va_arg(arglis, double));
-				break;
-			}
+				break; }
 			case 's': {
 				str = va_arg(arglis, char *);
 				if (str != NULL)
+				{
 					printf("%s", str);
+					break; }
 				if (str == NULL)
+				{
 					printf("(nil)");
-				break;
+					break; }
 			}
-			while (format[c] != '\0')
-				printf(", ");
 		default:
-			break;
-		}
+			break; }
 		c++;
+		while (format[c] != '\0')
+		{
+			printf(", ");
+			c++; }
 	}
 	printf("\n");
 	va_end(arglis);
