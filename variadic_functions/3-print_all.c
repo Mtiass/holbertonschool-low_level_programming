@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 				break; }
 			case 's': {
 				str = va_arg(arglis, char *);
-				while (str != NULL)
+				if (str != NULL)
 				{
 					printf("%s", str);
 					continue; }
@@ -39,7 +39,7 @@ void print_all(const char * const format, ...)
 			}
 		default:
 			break; }
-		if (format[c + 1] != '\0')
+		while (format[c + 1] != '\0')
 		{
 			printf(", ");
 			break; }
