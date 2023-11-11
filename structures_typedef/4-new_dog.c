@@ -21,8 +21,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		return (NULL);
 	}
-	copyn = strdup(name);
-	copyo = strdup(owner);
+	copyn = malloc(strlen(name) + 1);
+	copyo = malloc(strlen(owner) + 1);
 	if (copyn == NULL || copyo == NULL)
 	{
 		free(copyn);
@@ -30,6 +30,8 @@ dog_t *new_dog(char *name, float age, char *owner)
 		free(new_dog);
 		return (NULL);
 	}
+	strcpy(copyn, name);
+	strcpy(copyo, owner);
 	new_dog->name = copyn;
 	new_dog->age = age;
 	new_dog->owner = copyo;
