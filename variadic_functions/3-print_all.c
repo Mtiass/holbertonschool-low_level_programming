@@ -11,6 +11,10 @@ void print_all(const char * const format, ...)
 	char *str;
 	va_list arglis;
 
+	while (format == NULL)
+	{
+		printf("\n");
+		break; }
 	va_start(arglis, format);
 	c = 0;
 	while (format[c] != '\0')
@@ -31,14 +35,12 @@ void print_all(const char * const format, ...)
 				if (str != NULL)
 				{
 					printf("%s", str);
-					break;
-				}
+					break; }
 				printf("(nil)");
 				break; }
 		default:
 			c++;
-			continue;
-		}
+			continue; }
 		if (format[c + 1] != '\0')
 			printf(", ");
 		c++;
