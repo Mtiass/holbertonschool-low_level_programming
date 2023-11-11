@@ -41,7 +41,8 @@ void print_all(const char * const format, ...)
 			break;
 		}
 		c++;
-		printf(", ");
+		while (format[c] != '\0')
+			printf(", ");
 	}
 	printf("\n");
 	va_end(arglis);
