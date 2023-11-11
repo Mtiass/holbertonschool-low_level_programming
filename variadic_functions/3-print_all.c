@@ -14,7 +14,7 @@ void print_all(const char * const format, ...)
 	while (format == NULL)
 	{
 		printf("\n");
-		break; }
+		return; }
 	va_start(arglis, format);
 	c = 0;
 	while (format[c] != '\0')
