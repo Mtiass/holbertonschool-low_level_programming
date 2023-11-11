@@ -29,14 +29,17 @@ void print_all(const char * const format, ...)
 			case 's': {
 				str = va_arg(arglis, char *);
 				if (str != NULL)
+				{
 					printf("%s", str);
-				if (str == NULL)
-					printf("(nil)");
+					break;
+				}
+				printf("(nil)");
 				break; }
 		default:
-			break;
+			c++;
+			continue;
 		}
-		while (format[c + 1] != '\0')
+		if (format[c + 1] != '\0')
 			printf(", ");
 		c++;
 	}
