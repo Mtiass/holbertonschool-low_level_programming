@@ -12,7 +12,6 @@ void print_all(const char * const format, ...)
 	va_list arglis;
 
 	va_start(arglis, format);
-	str = va_arg(arglis, char *);
 	c = 0;
 	while (format[c] != '\0')
 	{
@@ -31,6 +30,7 @@ void print_all(const char * const format, ...)
 				break;
 			}
 			case 's': {
+				str = va_arg(arglis, char *);
 				if (str != NULL)
 					printf("%s", str);
 				if (str == NULL)
