@@ -28,11 +28,11 @@ void print_all(const char * const format, ...)
 				break; }
 			case 's': {
 				str = va_arg(arglis, char *);
-				if (str != NULL)
+				while (str != NULL)
 				{
 					printf("%s", str);
 					break; }
-				else if (str == NULL)
+				if (str == NULL)
 				{
 					printf("(nil)");
 					break; }
