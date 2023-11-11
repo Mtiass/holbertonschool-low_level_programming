@@ -37,12 +37,12 @@ void print_all(const char * const format, ...)
 					printf("(nil)");
 				break;
 			}
+			while (format[c] != '\0')
+				printf(", ")
 		default:
 			break;
 		}
 		c++;
-		while (format[c] != '\0')
-			printf(", ");
 	}
 	printf("\n");
 	va_end(arglis);
