@@ -39,11 +39,11 @@ void print_all(const char * const format, ...)
 			}
 		default:
 			break; }
-		c++;
-		while (format[c] != '\0')
+		while (format[c + 1] != '\0')
 		{
 			printf(", ");
-			c++; }
+			break; }
+		c++;
 	}
 	printf("\n");
 	va_end(arglis);
