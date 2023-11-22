@@ -12,9 +12,16 @@ list_t *add_node_end(list_t **head, const char *str)
 	list_t *lastnod = *head;
 	char *stcpy = strdup(str);
 
-	if (stcpy == NULL)
+	if (newnode == NULL)
+	{
+		free(newnode);
 		return (NULL);
-
+	}
+	if (stcpy == NULL)
+	{
+		free(stcpy);
+		return (NULL);
+	}
 	newnode->str = stcpy;
 	newnode->len = strlen(stcpy);
 	newnode->next = NULL;
