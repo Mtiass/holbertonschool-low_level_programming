@@ -12,13 +12,15 @@ list_t *add_node(list_t **head, const char *str)
 	char *stcpy = strdup(str);
 
 	if (newnode == NULL)
-	{	
+	{
+		free(stcpy);
 		free(newnode);
 		return (NULL);
 	}
 	if (stcpy == NULL)
 	{
 		free(stcpy);
+		free(newnode);
 		return (NULL);
 	}
 	newnode->str = stcpy;

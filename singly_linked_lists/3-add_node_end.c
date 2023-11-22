@@ -14,12 +14,14 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (newnode == NULL)
 	{
+		free(stcpy);
 		free(newnode);
 		return (NULL);
 	}
 	if (stcpy == NULL)
 	{
 		free(stcpy);
+		free(newnode);
 		return (NULL);
 	}
 	newnode->str = stcpy;
