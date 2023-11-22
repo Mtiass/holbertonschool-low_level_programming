@@ -3,7 +3,7 @@
  * print_strings - Entry point
  * Description:function that prints strings, followed by a new line.
  * @separator:is the string to be printed between the strings.
- * @n:is the number of strings passed to the function.
+ * @n:is the first argument/parameter passed to the function.
  * Return: void.
  */
 void print_strings(const char *separator, const unsigned int n, ...)

@@ -2,7 +2,7 @@
 /**
  * sum_them_all - Entry point
  * Description:variadic function that returns the sum of all its parameters
- * @n: constant un integer which is the number of parameters to add.
+ * @n: constant un integer which is the first parameter to add.
  * Return: an integer.
  */
 int sum_them_all(const unsigned int n, ...)
