@@ -11,7 +11,7 @@ size_t print_dlistint(const dlistint_t *h)
 
 	while (curnode != NULL)
 	{
-		printf("%i \n", curnode->n);
+		printf("%i\n", curnode->n);
 		nodes++;
 		curnode = curnode->next;
 	}
