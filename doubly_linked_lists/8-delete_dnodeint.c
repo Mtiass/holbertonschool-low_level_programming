@@ -13,7 +13,6 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 
 	if (acnode == NULL || *head == NULL)
 		return (-1);
-	
 	if (index == 0)
 	{
 		*head = acnode->next;
@@ -28,6 +27,8 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 			prev = acnode;
 			acnode = acnode->next;
 		}
+		if (acnode == NULL)
+			return (-1);
 		prev->next = acnode->next;
 		if (acnode->next != NULL)
 			acnode->next->prev = prev;
