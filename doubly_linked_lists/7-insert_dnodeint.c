@@ -11,40 +11,34 @@
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	dlistint_t *actnod = *h;
-	unsigned int con = 0;
 	dlistint_t *newnod = malloc(sizeof(dlistint_t));
 
 	if (newnod == NULL)
-		return (NULL);
-	if (actnod == NULL)
-	{
-		if (idx == 0)
-		{
-			*h = newnod;
-			newnod->n = n;
-			newnod->prev = NULL;
-			newnod->next = NULL;
-		}
-		else
-		{
-			free(newnod);
-			return (NULL); }
-	}
-	while (actnod != NULL && con < idx - 1)
-	{
-		actnod = actnod->next;
-		con++; }
-	if (actnod == NULL)
 	{
 		free(newnod);
-		return (NULL); }
+		return (NULL);
+	}
 	newnod->n = n;
-	newnod->prev = actnod;
-	newnod->next = actnod->next;
-	if (actnod->next != NULL)
-		actnod->next->prev = newnod;
-	actnod->next = newnod;
-	if (newnod->prev == NULL)
+	if (*h == NULL && idx == 0)
+	{
 		*h = newnod;
+		newnod->prev = NULL;
+		newnod->next = NULL; }
+	else if (idx == 0)
+	{
+		newnod->next = actnod;
+		newnod->prev = NULL;
+		actnod->prev = newnod;
+		*h = newnod; }
+	else
+	{
+		while (actnod != NULL && --idx)
+			actnod = actnod->next;
+		newnod->prev = actnod;
+		newnod->next = actnod->next;
+		if (actnod->next != NULL)
+			actnod->next->prev = newnod;
+		actnod->next = newnod;
+	}
 	return (newnod);
 }
