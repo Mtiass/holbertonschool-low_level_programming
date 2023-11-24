@@ -34,6 +34,11 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	{
 		while (actnod != NULL && --idx)
 			actnod = actnod->next;
+		if (actnod == NULL)
+		{
+			free(newnod);
+			return (NULL);
+		}
 		newnod->prev = actnod;
 		newnod->next = actnod->next;
 		if (actnod->next != NULL)
