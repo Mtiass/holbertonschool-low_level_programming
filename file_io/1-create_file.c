@@ -15,11 +15,14 @@ int create_file(const char *filename, char *text_content)
 		perror("fails");
 		return (-1);
 	}
-	bytwr = write(fd, text_content, strlen(text_content));
-	if (bytwr == -1)
+	if (text_content != NULL)
 	{
-		perror("fails");
-		return (-1);
+		bytwr = write(fd, text_content, strlen(text_content) + 1);
+		if (bytwr == -1)
+		{
+			perror("fails");
+			return (-1);
+		}
 	}
 	close(fd);
 	return (1);
